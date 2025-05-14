@@ -117,7 +117,7 @@ st.map(eafit_location, zoom=15)
 
 # File uploader
 st.markdown('<label class="upload-label">📂 Seleccione archivo CSV</label>', unsafe_allow_html=True)
-uploaded_file = st.file_uploader('Seleccione archivo CSV', type=['csv'])
+uploaded_file = st.file_uploader(type=['csv'])
 
 if uploaded_file is not None:
     try:
