@@ -13,15 +13,6 @@ layout="wide"
 
 st.markdown("""
     <style>
-    /* Estilo para el contenedor de los tabs */
-    div.stTabs {
-        background-color: #4E5B4E;
-        border-radius: 10px;
-        font-size: 1.1rem;
-        font-weight: bold;
-    }
-    
-    /* Estilo para cada tab individual */
     div.stTabs div[role="tab"] {
         padding: 12px;
         color: white;
@@ -29,25 +20,14 @@ st.markdown("""
         cursor: pointer;
     }
 
-    /* Cambio de color cuando se pasa el ratón por encima del tab */
     div.stTabs div[role="tab"]:hover {
         background-color: #76C76D;
     }
 
-    /* Estilo para el tab activo */
     div.stTabs div[aria-selected="true"] {
         background-color: #76C76D;
         color: white;
         border-radius: 10px;
-    }
-
-    /* Estilo para el contenido dentro de los tabs */
-    div.stTab {
-        background-color: #F4F8F4;
-        padding: 20px;
-        border-radius: 10px;
-        font-size: 1rem;
-        color: #4E5B4E;
     }
     </style>
 """, unsafe_allow_html=True)
