@@ -108,35 +108,27 @@ st.markdown("""
     <style>
     /* Estilo para los selectbox */
     .stSelectbox {
-        background-color: #FFFFFF;  /* Fondo blanco */
-        border: 2px solid #A3D9A5;  /* Borde verde claro */
-        border-radius: 10px;  /* Bordes más redondeados */
-        padding: 12px 18px;  /* Espacio interno para más comodidad */
+        background-color: #FFFFFF;
+        border: 2px solid #265121; 
+        border-radius: 10px; 
+        padding: 12px 18px; 
         font-size: 1rem;
-        color: #4E5B4E;  /* Color del texto */
-        font-weight: 600;  /* Texto un poco más grueso */
+        color: #4E5B4E; 
+        font-weight: 600;
         cursor: pointer;
-        transition: border-color 0.3s ease, background-color 0.3s ease;  /* Transiciones suaves */
+        transition: border-color 0.3s ease, background-color 0.3s ease; 
     }
 
-    /* Estilo cuando el selectbox está enfocado */
     .stSelectbox:focus {
-        outline: none;  /* Quitar outline por defecto */
-        box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);  /* Sombra verde al enfocar */
-        border-color: #76C76D;  /* Borde verde más oscuro */
-        background-color: #F0F8F0;  /* Fondo ligeramente más claro */
+        outline: none; 
+        box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+        border-color: #76C76D; 
+        background-color: #F0F8F0; 
     }
 
-    /* Estilo para el selectbox cuando se pasa el mouse por encima */
     .stSelectbox:hover {
-        background-color: #e8f4e8;  /* Fondo suave al pasar el mouse */
-        border-color: #76C76D;  /* Borde verde más intenso */
-    }
-
-    /* Estilo para el texto de las opciones */
-    .stSelectbox option {
-        color: #4E5B4E;  /* Texto de las opciones en verde suave */
-        background-color: #FFFFFF;  /* Fondo blanco para las opciones */
+        background-color: #e8f4e8; 
+        border-color: #76C76D; 
     }
 
     </style>
