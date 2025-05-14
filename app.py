@@ -272,7 +272,11 @@ else:
     
 # Footer
 st.markdown("""
-    ---
-    Desarrollado para el análisis de datos de sensores urbanos.
-    Ubicación: Universidad EAFIT, Medellín, Colombia
-""")
+    <hr style="border-top: 2px solid #4E5B4E;">
+    <div style="font-family: 'Segoe UI', 'Trebuchet MS', sans-serif; font-size: 1rem; color: #4E5B4E; text-align: center;">
+        <p><strong>Desarrollado para el análisis de datos de sensores urbanos</strong></p>
+        <p>Ubicación: <strong>Universidad EAFIT</strong>, Medellín, Colombia</p>
+        <p>© 2025 Todos los derechos reservados</p>
+    </div>
+""", unsafe_allow_html=True)
+
