@@ -266,7 +266,7 @@ if uploaded_file is not None:
 
         with tab4:
             st.markdown("""
-               <h3 style='color:#265121; font-size:1.3rem; margin-bottom:0.5rem;'>Información del Sitio de Medición</h3>
+               <h2 style='font-family: "Segoe UI", "Trebuchet MS", sans-serif;font-size: 3rem;font-weight: 900;color: #265121;text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);'>Información del Sitio de Medición</h2>
                """, unsafe_allow_html=True)
             col1, col2 = st.columns(2)
 
