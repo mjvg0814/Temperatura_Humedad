@@ -68,6 +68,22 @@ st.markdown("""
     </h3>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+<style>
+.warning-message {
+    font-size: 1rem;
+    color: #D9534F;
+    background-color: #FDECEA;
+    border-left: 4px solid #D9534F;
+    padding: 8px 12px;
+    margin: 15px auto;
+    width: fit-content;
+    border-radius: 4px;
+    text-align: left;
+}
+</style>
+""", unsafe_allow_html=True)
+
 # Datos de ubicación EAFIT
 eafit_location = pd.DataFrame({
     'lat': [6.2006],
@@ -202,7 +218,7 @@ if uploaded_file is not None:
         st.error(f'Error al procesar el archivo: {str(e)}')
 
 else:
-    st.warning('Por favor, cargue un archivo CSV para comenzar el análisis.')
+    st.markdown('<div class="warning-message">⚠️ Por favor, cargue un archivo CSV para comenzar el análisis.</div>', unsafe_allow_html=True)
 
 # Footer
 st.markdown("""
