@@ -205,7 +205,7 @@ if uploaded_file is not None:
         df1['Time'] = pd.to_datetime(df1['Time'])
         df1 = df1.set_index('Time')
 
-        tab1, tab2, tab3, tab4 = st.tabs(["<h2 style='font-family: "Segoe UI", "Trebuchet MS", sans-serif; font-size: 2rem; font-weight: 700;color: #265121; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);'>📈 Visualización</h2>", "📊 Estadísticas", "🔍 Filtros", "🗺️ Información del Sitio"])
+        tab1, tab2, tab3, tab4 = st.tabs(["<style='font-family: "Segoe UI", "Trebuchet MS", sans-serif; font-size: 2rem; font-weight: 700;color: #265121; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);'>📈 Visualización", "📊 Estadísticas", "🔍 Filtros", "🗺️ Información del Sitio"])
         
 
         with tab1:
