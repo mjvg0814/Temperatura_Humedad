@@ -5,21 +5,24 @@ import numpy as np
 from datetime import datetime
 
 # Page configuration
+
 st.set_page_config(
-    page_title="Análisis de Sensores - Mi Ciudad",
-    layout="wide"
+page_title="Análisis de Sensores - Mi Ciudad",
+layout="wide"
 )
 
 # Estilos de fondo y elementos
+
 st.markdown("""
-    <style>
-    .stApp {
-        background-image: url('https://raw.githubusercontent.com/mjvg0814/Temperatura_Humedad/main/Fondo_plantas2.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-    }
+
+<style>
+.stApp {
+background-image: url('https://raw.githubusercontent.com/mjvg0814/Temperatura_Humedad/main/Fondo_plantas2.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+}
 
     .location-title {
         font-family: "Segoe UI", "Trebuchet MS", sans-serif;
@@ -32,13 +35,16 @@ st.markdown("""
         letter-spacing: 1px;
         text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
     }
-    
+
     </style>
+
 """, unsafe_allow_html=True)
 
 # Título principal
+
 st.markdown("""
-    <h1 style='
+
+<h1 style='
         font-family: "Segoe UI", "Trebuchet MS", sans-serif;
         font-size: 3rem;
         font-weight: 900;
@@ -49,13 +55,15 @@ st.markdown("""
         margin-top: 1.5rem;
         margin-bottom: 1rem;
     '>
-        Análisis de datos de Sensores en Mi Ciudad
-    </h1>
+Análisis de datos de Sensores en Mi Ciudad
+</h1>
 """, unsafe_allow_html=True)
 
 # Descripción
+
 st.markdown("""
-    <h3 style='
+
+<h3 style='
         font-family: "Segoe UI", "Trebuchet MS", sans-serif;
         font-size: 1rem;
         color: #4E5B4E;
@@ -63,26 +71,15 @@ st.markdown("""
         margin-top: -1rem;
         margin-bottom: 1rem;
     '>
-        Esta aplicación permite analizar datos de temperatura y humedad
-        recolectados por sensores ESP32 en diferentes puntos de la ciudad.
-    </h3>
-""", unsafe_allow_html=True)
-
-st.markdown("""
-<style>
-        h4 {
-            font-family: "Segoe UI", "Trebuchet MS", sans-serif;
-            font-size: 1rem;
-            font-weight: 500;
-            color: #4E5B4E;
-            margin: 0.5rem 0;
-            letter-spacing: 0.3px;
-        }
-    </style>
+Esta aplicación permite analizar datos de temperatura y humedad
+recolectados por sensores ESP32 en diferentes puntos de la ciudad.
+</h3>
 """, unsafe_allow_html=True)
 
 # Mensaje CSV
+
 st.markdown("""
+
 <style>
 .warning-message {
     font-size: 1rem;
@@ -95,10 +92,13 @@ st.markdown("""
     text-align: left;
 }
 </style>
+
 """, unsafe_allow_html=True)
 
 # Cargar CSV
+
 st.markdown("""
+
 <style>
 .upload-label {
     display: inline-block;
@@ -113,58 +113,66 @@ st.markdown("""
     transition: background-color 0.3s ease;
 }
 </style>
+
 """, unsafe_allow_html=True)
 
 # Estilo para los selectbox
+
 st.markdown("""
-    <style>
-    .stSelectbox {
-        background-color: #FFFFFF;
-        border: 2px solid #4c8146; 
-        border-radius: 10px; 
-        padding: 12px 18px; 
-        font-size: 1rem;
-        color: #4E5B4E; 
-        font-weight: 600;
-        cursor: pointer;
-        transition: border-color 0.3s ease, background-color 0.3s ease; 
-    }
+
+<style>
+.stSelectbox {
+background-color: #FFFFFF;
+border: 2px solid #4c8146;
+border-radius: 10px;
+padding: 12px 18px;
+font-size: 1rem;
+color: #4E5B4E;
+font-weight: 600;
+cursor: pointer;
+transition: border-color 0.3s ease, background-color 0.3s ease;
+}
 
     .stSelectbox:focus {
-        outline: none; 
+        outline: none;
         box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
-        border-color: #76C76D; 
-        background-color: #F0F8F0; 
+        border-color: #76C76D;
+        background-color: #F0F8F0;
     }
 
     .stSelectbox:hover {
-        background-color: #e8f4e8; 
-        border-color: #76C76D; 
+        background-color: #e8f4e8;
+        border-color: #76C76D;
     }
 
     </style>
+
 """, unsafe_allow_html=True)
 
 # Datos de ubicación EAFIT
+
 eafit_location = pd.DataFrame({
-    'lat': [6.2006],
-    'lon': [-75.5783],
-    'location': ['Universidad EAFIT']
+'lat': [6.2006],
+'lon': [-75.5783],
+'location': ['Universidad EAFIT']
 })
 
 # Título ubicación
+
 st.markdown('<p class="location-title">📍 Ubicación de los Sensores - Universidad EAFIT</p>', unsafe_allow_html=True)
 
 # Mapa
+
 st.map(eafit_location, zoom=15)
 
 # File uploader
+
 st.markdown('<label class="upload-label">📂 Seleccione archivo CSV</label>', unsafe_allow_html=True)
 uploaded_file = st.file_uploader('', type=['csv'])
 
 if uploaded_file is not None:
-    try:
-        df1 = pd.read_csv(uploaded_file)
+try:
+df1 = pd.read_csv(uploaded_file)
 
         column_mapping = {
             'temperatura {device="ESP32", name="Sensor 1"}': 'temperatura',
@@ -264,20 +272,20 @@ if uploaded_file is not None:
                st.markdown("""
                <h3 style='color:#265121; font-size:1.3rem; margin-bottom:0.5rem;'>Ubicación del Sensor</h3>
                """, unsafe_allow_html=True)
-    
+
                st.markdown("""
                <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>
                <strong>📍 Universidad EAFIT</strong></h4>
                """, unsafe_allow_html=True)
-    
+
                st.markdown("""
                <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>🌎 Latitud: 6.2006</h4>
                """, unsafe_allow_html=True)
-    
+
                st.markdown("""
                <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>🌍 Longitud: -75.5783</h4>
                """, unsafe_allow_html=True)
-    
+
                st.markdown("""
                <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>⛰️ Altitud: ~1,495 metros sobre el nivel del mar</h4>
                """, unsafe_allow_html=True)
@@ -293,14 +301,16 @@ if uploaded_file is not None:
         st.error(f'Error al procesar el archivo: {str(e)}')
 
 else:
-    st.markdown('<div class="warning-message">⚠️ Por favor, cargue un archivo CSV para comenzar el análisis.</div>', unsafe_allow_html=True)
+st.markdown('<div class="warning-message">⚠️ Por favor, cargue un archivo CSV para comenzar el análisis.</div>', unsafe_allow_html=True)
 
 # Footer
+
 st.markdown("""
-    <hr style="border-top: 2px solid #4E5B4E; margin-top: 20px; margin-bottom: 15px;">
-    <div style="font-family: 'Segoe UI', 'Trebuchet MS', sans-serif; font-size: 1rem; color: #4E5B4E; text-align: center; margin-top: 0px; margin-bottom: -150px; line-height: 1.2;">
-        <p><strong>Desarrollado para el análisis de datos de sensores urbanos</strong></p>
-        <strong>Universidad EAFIT</strong>, Medellín, Colombia</p>
-        <p><strong>Tomas Arcila, Joel Diaz y Maria Jose Vallejo</strong></p>
-    </div>
+
+<hr style="border-top: 2px solid #4E5B4E; margin-top: 20px; margin-bottom: 15px;">
+<div style="font-family: 'Segoe UI', 'Trebuchet MS', sans-serif; font-size: 1rem; color: #4E5B4E; text-align: center; margin-top: 0px; margin-bottom: -150px; line-height: 1.2;">
+<p><strong>Desarrollado para el análisis de datos de sensores urbanos</strong></p>
+<strong>Universidad EAFIT</strong>, Medellín, Colombia</p>
+<p><strong>Tomas Arcila, Joel Diaz y Maria Jose Vallejo</strong></p>
+</div>
 """, unsafe_allow_html=True)
