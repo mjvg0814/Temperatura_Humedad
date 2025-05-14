@@ -15,7 +15,7 @@ st.set_page_config(
 st.markdown("""
     <style>
     .stApp {
-        background-image: url('https://raw.githubusercontent.com/mjvg0814/Temperatura_Humedad/main/Fondo_naturaleza.png');
+        background-image: url('https://raw.githubusercontent.com/mjvg0814/Temperatura_Humedad/main/Fondo_plantas.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
