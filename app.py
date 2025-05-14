@@ -265,7 +265,9 @@ if uploaded_file is not None:
                 st.download_button("Descargar CSV", csv, "datos_filtrados.csv", "text/csv")
 
         with tab4:
-            st.subheader("Información del Sitio de Medición")
+            st.markdown("""
+               <h3 style='color:#265121; font-size:1.3rem; margin-bottom:0.5rem;'>Información del Sitio de Medición</h3>
+               """, unsafe_allow_html=True)
             col1, col2 = st.columns(2)
 
             with col1:
