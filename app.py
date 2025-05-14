@@ -99,14 +99,6 @@ st.markdown("""
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
-.upload-label:hover {
-    background-color: #B9E2B9;
-}
-
-.stFileUploader label {
-    display: none; /* Oculta el label original de Streamlit */
-}
 </style>
 """, unsafe_allow_html=True)
 
@@ -125,8 +117,6 @@ st.map(eafit_location, zoom=15)
 
 # File uploader
 st.markdown('<label class="upload-label">📂 Seleccione archivo CSV</label>', unsafe_allow_html=True)
-uploaded_file = st.file_uploader('', type=['csv'])
-
 uploaded_file = st.file_uploader('Seleccione archivo CSV', type=['csv'])
 
 if uploaded_file is not None:
