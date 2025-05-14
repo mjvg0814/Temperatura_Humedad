@@ -261,10 +261,10 @@ if uploaded_file is not None:
 
             with col1:
                 st.markdown("<h3>Ubicación del Sensor</h3>", unsafe_allow_html=True)
-                st.write("**Universidad EAFIT**", unsafe_allow_html=True)
-                st.write("- Latitud: 6.2006", unsafe_allow_html=True)
-                st.write("- Longitud: -75.5783", unsafe_allow_html=True)
-                st.write("- Altitud: ~1,495 metros sobre el nivel del mar", unsafe_allow_html=True)
+                st.write("<h4>**Universidad EAFIT**", unsafe_allow_html=True)
+                st.write("<h4>- Latitud: 6.2006", unsafe_allow_html=True)
+                st.write("<h4>- Longitud: -75.5783", unsafe_allow_html=True)
+                st.write("<h4>- Altitud: ~1,495 metros sobre el nivel del mar", unsafe_allow_html=True)
 
             with col2:
                 st.markdown("<h3>Detalles del Sensor</h3>", unsafe_allow_html=True)
