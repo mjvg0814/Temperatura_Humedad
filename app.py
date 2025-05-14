@@ -272,7 +272,7 @@ else:
     
 # Footer
 st.markdown("""
-    <hr style="border-top: 2px solid #4E5B4E; margin-bottom: 10px;"">
+    <hr style="border-top: 2px solid #4E5B4E; margin-bottom: -10px;"">
     <div style="font-family: 'Segoe UI', 'Trebuchet MS', sans-serif; font-size: 1rem; color: #4E5B4E; text-align: center; margin-bottom: -10px;">
         <p><strong>Desarrollado para el análisis de datos de sensores urbanos</strong></p>
         <p>Ubicación: <strong>Universidad EAFIT</strong>, Medellín, Colombia</p>
