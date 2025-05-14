@@ -106,38 +106,29 @@ st.markdown("""
 # Estilo para los selectbox
 st.markdown("""
     <style>
-        /* Estilo de selectbox */
-        .stSelectbox select {
-            background-color: #D9F7D9;
-            color: #4E5B4E;
-            border: 2px solid #4E5B4E;
-            border-radius: 6px;
-            padding: 8px 12px;
-            font-size: 1rem;
-            font-weight: bold;
-            font-family: "Segoe UI", "Trebuchet MS", sans-serif;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
+    /* Estilo para el selectbox */
+    .stSelectbox {
+        background-color: #D9F7D9;
+        border: 2px solid #4E5B4E;
+        border-radius: 6px;
+        padding: 10px 15px;
+        font-size: 1rem;
+        color: #4E5B4E;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
 
-        /* Hover (cuando el mouse está sobre el selectbox) */
-        .stSelectbox select:hover {
-            background-color: #bdebbd;
-            color: #265121;
-        }
+    /* Estilo cuando el selectbox está enfocado */
+    .stSelectbox:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    }
 
-        /* Selectbox seleccionado */
-        .stSelectbox select:focus {
-            background-color: #4E5B4E;
-            color: white;
-            border-color: #265121;
-        }
-
-        /* Estilo cuando el selectbox es deshabilitado */
-        .stSelectbox select:disabled {
-            background-color: #f0f0f0;
-            color: #c0c0c0;
-            border-color: #c0c0c0;
-        }
+    /* Estilo para el selectbox cuando se pasa el mouse por encima */
+    .stSelectbox:hover {
+        background-color: #bdebbd;
+    }
     </style>
 """, unsafe_allow_html=True)
 
