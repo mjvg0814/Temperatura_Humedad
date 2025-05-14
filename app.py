@@ -130,7 +130,17 @@ st.markdown("""
     /* Estilo para el selectbox cuando se pasa el mouse por encima */
     .stSelectbox:hover {
         background-color: #e8f4e8;  /* Fondo suave al pasar el mouse */
-        border-color: #76C76D;  /* Bo*
+        border-color: #76C76D;  /* Borde verde más intenso */
+    }
+
+    /* Estilo para el texto de las opciones */
+    .stSelectbox option {
+        color: #4E5B4E;  /* Texto de las opciones en verde suave */
+        background-color: #FFFFFF;  /* Fondo blanco para las opciones */
+    }
+
+    </style>
+""", unsafe_allow_html=True)
 
 
 
