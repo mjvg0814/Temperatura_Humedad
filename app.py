@@ -68,6 +68,7 @@ st.markdown("""
     </h3>
 """, unsafe_allow_html=True)
 
+#Mensaje CSV
 st.markdown("""
 <style>
 .warning-message {
@@ -76,7 +77,6 @@ st.markdown("""
     background-color: #FDECEA;
     border-left: 4px solid #D9534F;
     padding: 8px 12px;
-    margin: 15px auto;
     width: fit-content;
     border-radius: 4px;
     text-align: left;
