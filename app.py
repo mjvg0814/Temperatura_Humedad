@@ -80,7 +80,7 @@ st.markdown("""
     }
 """, unsafe_allow_html=True)
 
-#Mensaje CSV
+# Mensaje CSV
 st.markdown("""
 <style>
 .warning-message {
@@ -96,7 +96,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-#Cargar CSV
+# Cargar CSV
 st.markdown("""
 <style>
 .upload-label {
@@ -114,11 +114,9 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-#Pestañas
 # Estilo para los selectbox
 st.markdown("""
     <style>
-    /* Estilo para los selectbox */
     .stSelectbox {
         background-color: #FFFFFF;
         border: 2px solid #4c8146; 
@@ -146,9 +144,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-
-
-
 # Datos de ubicación EAFIT
 eafit_location = pd.DataFrame({
     'lat': [6.2006],
@@ -156,16 +151,15 @@ eafit_location = pd.DataFrame({
     'location': ['Universidad EAFIT']
 })
 
-# Título personalizado para la sección de ubicación
+# Título ubicación
 st.markdown('<p class="location-title">📍 Ubicación de los Sensores - Universidad EAFIT</p>', unsafe_allow_html=True)
 
-# Mapa estilizado
+# Mapa
 st.map(eafit_location, zoom=15)
 
 # File uploader
 st.markdown('<label class="upload-label">📂 Seleccione archivo CSV</label>', unsafe_allow_html=True)
 uploaded_file = st.file_uploader('', type=['csv'])
-
 
 if uploaded_file is not None:
     try:
@@ -265,22 +259,21 @@ if uploaded_file is not None:
             st.subheader("Información del Sitio de Medición")
             col1, col2 = st.columns(2)
 
-           with col1:
-               st.markdown("<h3>Ubicación del Sensor</h3>", unsafe_allow_html=True)
-               st.write("**Universidad EAFIT**", unsafe_allow_html=True)
-               st.write("- Latitud: 6.2006", unsafe_allow_html=True)
-               st.write("- Longitud: -75.5783", unsafe_allow_html=True)
-               st.write("- Altitud: ~1,495 metros sobre el nivel del mar", unsafe_allow_html=True)
+            with col1:
+                st.markdown("<h3>Ubicación del Sensor</h3>", unsafe_allow_html=True)
+                st.write("**Universidad EAFIT**", unsafe_allow_html=True)
+                st.write("- Latitud: 6.2006", unsafe_allow_html=True)
+                st.write("- Longitud: -75.5783", unsafe_allow_html=True)
+                st.write("- Altitud: ~1,495 metros sobre el nivel del mar", unsafe_allow_html=True)
 
-           with col2:
-               st.markdown("<h3>Detalles del Sensor</h3>", unsafe_allow_html=True)
-               st.write("<h4>- Tipo: ESP32</h4>", unsafe_allow_html=True)
-               st.write("<h4>- Variables medidas:</h4>", unsafe_allow_html=True)
-               st.write("<h4>  * Temperatura (°C)</h4>", unsafe_allow_html=True)
-               st.write("<h4>  * Humedad (%)</h4>", unsafe_allow_html=True)
-               st.write("<h4>- Frecuencia de medición: Según configuración</h4>", unsafe_allow_html=True)
-               st.write("<h4>- Ubicación: Campus universitario</h4>", unsafe_allow_html=True)
-
+            with col2:
+                st.markdown("<h3>Detalles del Sensor</h3>", unsafe_allow_html=True)
+                st.write("<h4>- Tipo: ESP32</h4>", unsafe_allow_html=True)
+                st.write("<h4>- Variables medidas:</h4>", unsafe_allow_html=True)
+                st.write("<h4>  * Temperatura (°C)</h4>", unsafe_allow_html=True)
+                st.write("<h4>  * Humedad (%)</h4>", unsafe_allow_html=True)
+                st.write("<h4>- Frecuencia de medición: Según configuración</h4>", unsafe_allow_html=True)
+                st.write("<h4>- Ubicación: Campus universitario</h4>", unsafe_allow_html=True)
 
     except Exception as e:
         st.error(f'Error al procesar el archivo: {str(e)}')
