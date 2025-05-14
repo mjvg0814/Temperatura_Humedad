@@ -262,19 +262,17 @@ if uploaded_file is not None:
 
             with col1:
                 st.markdown("<h3>Ubicación del Sensor</h3>", unsafe_allow_html=True)
-                st.write("<h4>**Universidad EAFIT**", unsafe_allow_html=True)
-                st.write("<h4>- Latitud: 6.2006", unsafe_allow_html=True)
-                st.write("<h4>- Longitud: -75.5783", unsafe_allow_html=True)
-                st.write("<h4>- Altitud: ~1,495 metros sobre el nivel del mar", unsafe_allow_html=True)
+                st.markdown("<h4><strong>Universidad EAFIT</strong></h4>", unsafe_allow_html=True)
+                st.markdown("<h4>- Latitud: 6.2006</h4>", unsafe_allow_html=True)
+                st.markdown("<h4>- Longitud: -75.5783</h4>", unsafe_allow_html=True)
+                st.markdown("<h4>- Altitud: ~1,495 metros sobre el nivel del mar</h4>", unsafe_allow_html=True)
 
             with col2:
                 st.markdown("<h3>Detalles del Sensor</h3>", unsafe_allow_html=True)
-                st.write("<h4>- Tipo: ESP32</h4>", unsafe_allow_html=True)
-                st.write("<h4>- Variables medidas:</h4>", unsafe_allow_html=True)
-                st.write("<h4>  * Temperatura (°C)</h4>", unsafe_allow_html=True)
-                st.write("<h4>  * Humedad (%)</h4>", unsafe_allow_html=True)
-                st.write("<h4>- Frecuencia de medición: Según configuración</h4>", unsafe_allow_html=True)
-                st.write("<h4>- Ubicación: Campus universitario</h4>", unsafe_allow_html=True)
+                st.markdown("<h4>- Tipo: ESP32</h4>", unsafe_allow_html=True)
+                st.markdown("<h4>- Variables medidas:Temperatura (°C) y Humedad (%)</h4>", unsafe_allow_html=True)
+                st.markdown("<h4>- Frecuencia de medición: Según configuración</h4>", unsafe_allow_html=True)
+                st.markdown("<h4>- Ubicación: Campus universitario</h4>", unsafe_allow_html=True)
 
     except Exception as e:
         st.error(f'Error al procesar el archivo: {str(e)}')
