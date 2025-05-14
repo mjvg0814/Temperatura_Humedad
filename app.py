@@ -55,17 +55,6 @@ st.markdown("""
 
 # Descripción
 st.markdown("""
-    <style>
-        h4 {
-            font-family: "Segoe UI", "Trebuchet MS", sans-serif;
-            font-size: 1rem;
-            font-weight: 500;
-            color: #4E5B4E;
-            margin: 0.5rem 0;
-            letter-spacing: 0.3px;
-        }
-    </style>
-
     <h3 style='
         font-family: "Segoe UI", "Trebuchet MS", sans-serif;
         font-size: 1rem;
@@ -79,6 +68,18 @@ st.markdown("""
     </h3>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+<style>
+        h4 {
+            font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #4E5B4E;
+            margin: 0.5rem 0;
+            letter-spacing: 0.3px;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 # Mensaje CSV
 st.markdown("""
