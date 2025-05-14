@@ -225,8 +225,9 @@ if uploaded_file is not None:
                """, unsafe_allow_html=True)
             st.markdown("""
                <h4 style='color:#3b463b; font-size:1.1rem; margin:0.2rem 0;'>Seleccione variable para estadísticas</h4>
-               """, unsafe_allow_html=True)
-               stat_variable = st.radio("", ["temperatura", "humedad"])
+            """, unsafe_allow_html=True)
+            
+            stat_variable = st.radio("", ["temperatura", "humedad"])
 
             stats_df = df1[stat_variable].describe()
 
