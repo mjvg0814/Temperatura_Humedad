@@ -66,6 +66,18 @@ st.markdown("""
         Esta aplicación permite analizar datos de temperatura y humedad
         recolectados por sensores ESP32 en diferentes puntos de la ciudad.
     </h3>
+
+    h4 {
+        font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+        font-size: 1.2rem;
+        font-weight: normal;
+        color: #4E5B4E;
+        text-align: left;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.5px;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+    }
 """, unsafe_allow_html=True)
 
 #Mensaje CSV
@@ -253,21 +265,22 @@ if uploaded_file is not None:
             st.subheader("Información del Sitio de Medición")
             col1, col2 = st.columns(2)
 
-            with col1:
-                st.write("### Ubicación del Sensor")
-                st.write("**Universidad EAFIT**")
-                st.write("- Latitud: 6.2006")
-                st.write("- Longitud: -75.5783")
-                st.write("- Altitud: ~1,495 metros sobre el nivel del mar")
+           with col1:
+    st.markdown("<h3>Ubicación del Sensor</h3>", unsafe_allow_html=True)
+    st.write("**Universidad EAFIT**", unsafe_allow_html=True)
+    st.write("- Latitud: 6.2006", unsafe_allow_html=True)
+    st.write("- Longitud: -75.5783", unsafe_allow_html=True)
+    st.write("- Altitud: ~1,495 metros sobre el nivel del mar", unsafe_allow_html=True)
 
-            with col2:
-                st.write("### Detalles del Sensor")
-                st.write("- Tipo: ESP32")
-                st.write("- Variables medidas:")
-                st.write("  * Temperatura (°C)")
-                st.write("  * Humedad (%)")
-                st.write("- Frecuencia de medición: Según configuración")
-                st.write("- Ubicación: Campus universitario")
+with col2:
+    st.markdown("<h3>Detalles del Sensor</h3>", unsafe_allow_html=True)
+    st.write("<h4>- Tipo: ESP32</h4>", unsafe_allow_html=True)
+    st.write("<h4>- Variables medidas:</h4>", unsafe_allow_html=True)
+    st.write("<h4>  * Temperatura (°C)</h4>", unsafe_allow_html=True)
+    st.write("<h4>  * Humedad (%)</h4>", unsafe_allow_html=True)
+    st.write("<h4>- Frecuencia de medición: Según configuración</h4>", unsafe_allow_html=True)
+    st.write("<h4>- Ubicación: Campus universitario</h4>", unsafe_allow_html=True)
+
 
     except Exception as e:
         st.error(f'Error al procesar el archivo: {str(e)}')
