@@ -43,7 +43,6 @@ st.markdown("""
 
 
 # Title and description
-st.title('Análisis de datos de Sensores en Mi Ciudad')
 st.markdown("""
     Esta aplicación permite analizar datos de temperatura y humedad
     recolectados por sensores ESP32 en diferentes puntos de la ciudad.
