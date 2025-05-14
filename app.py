@@ -236,7 +236,9 @@ if uploaded_file is not None:
                     st.metric("Humedad Mínima", f"{stats_df['min']:.2f}%")
 
         with tab3:
-            st.subheader('Filtros de Datos')
+            st.markdown("""
+               <h2 style='font-family: "Segoe UI", "Trebuchet MS", sans-serif; font-size: 2rem; font-weight: 700;color: #265121; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);'>Filtros de Datos</h2>
+               """, unsafe_allow_html=True)
             filter_variable = st.selectbox("Seleccione variable para filtrar", ["temperatura", "humedad"])
             col1, col2 = st.columns(2)
 
