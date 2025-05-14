@@ -282,20 +282,20 @@ if uploaded_file is not None:
                 """, unsafe_allow_html=True)
 
                 st.markdown("""
-                <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>
+                <h4 style='color:#3b463b; font-size:1.1rem; margin:0.2rem 0;'>
                 <strong>📍 Universidad EAFIT</strong></h4>
                 """, unsafe_allow_html=True)
 
                 st.markdown("""
-                <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>🌎 Latitud: 6.2006</h4>
+                <h4 style='color:#3b463b; font-size:1.1rem; margin:0.2rem 0;'>🌎 Latitud: 6.2006</h4>
                 """, unsafe_allow_html=True)
 
                 st.markdown("""
-                <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>🌍 Longitud: -75.5783</h4>
+                <h4 style='color:#3b463b; font-size:1.1rem; margin:0.2rem 0;'>🌍 Longitud: -75.5783</h4>
                 """, unsafe_allow_html=True)
 
                 st.markdown("""
-                <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>⛰️ Altitud: ~1,495 metros sobre el nivel del mar</h4>
+                <h4 style='color:#3b463b; font-size:1.1rem; margin:0.2rem 0;'>⛰️ Altitud: ~1,495 metros sobre el nivel del mar</h4>
                 """, unsafe_allow_html=True)
 
             with col2:
@@ -304,23 +304,23 @@ if uploaded_file is not None:
                """, unsafe_allow_html=True)
     
                st.markdown("""
-               <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>🔧 Tipo: ESP32</h4>
+               <h4 style='color:#3b463b; font-size:1.1rem; margin:0.2rem 0;'>🔧 Tipo: ESP32</h4>
                """, unsafe_allow_html=True)
     
                st.markdown("""
-               <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>📏 Variables medidas:</h4>
-               <ul style='color:#4E5B4E; font-size:1.05rem; margin:0 0 0.5rem 1.2rem;'>
+               <h4 style='color:#3b463b; font-size:1.1rem; margin:0.2rem 0;'>📏 Variables medidas:</h4>
+               <ul style='color:#3b463b; font-size:1.05rem; margin:0 0 0.5rem 1.2rem;'>
                    <li>🌡️ Temperatura (°C)</li>
                    <li>💧 Humedad (%)</li>
                </ul>
                """, unsafe_allow_html=True)
     
                st.markdown("""
-               <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>⏱️ Frecuencia: Según configuración</h4>
+               <h4 style='color:#3b463b; font-size:1.1rem; margin:0.2rem 0;'>⏱️ Frecuencia: Según configuración</h4>
                """, unsafe_allow_html=True)
     
                st.markdown("""
-               <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>🏫 Ubicación: Campus universitario</h4>
+               <h4 style='color:#3b463b; font-size:1.1rem; margin:0.2rem 0;'>🏫 Ubicación: Campus universitario</h4>
                """, unsafe_allow_html=True)
 
     except Exception as e:
