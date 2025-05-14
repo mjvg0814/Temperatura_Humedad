@@ -13,24 +13,24 @@ layout="wide"
 
 st.markdown("""
     <style>
-    /* Estilo para los tabs */
-    .css-1r1m4t0 {
+    /* Estilo general para los tabs */
+    .css-1d391kg {
         background-color: #4E5B4E; /* Color de fondo de los tabs */
         border-radius: 10px;
     }
-    .css-1r1m4t0 > div {
-        padding: 10px;
+    .css-1d391kg > div {
+        padding: 12px;
         font-size: 1.1rem;
         color: white;
         font-weight: bold;
     }
 
-    .css-1r1m4t0 > div:hover {
+    .css-1d391kg > div:hover {
         background-color: #76C76D; /* Color al pasar el ratón */
     }
 
     /* Estilo para el tab activo */
-    .css-1r1m4t0 .st-a {
+    .css-1d391kg .st-bb {
         background-color: #76C76D;
         border-radius: 10px;
         color: white;
@@ -44,14 +44,9 @@ st.markdown("""
         font-size: 1rem;
         color: #4E5B4E;
     }
-
-    /* Estilo para el texto del tab */
-    .css-1v0mbdj {
-        font-size: 1rem;
-        color: #4E5B4E;
-    }
     </style>
 """, unsafe_allow_html=True)
+
 
 # Estilos de fondo y elementos
 
