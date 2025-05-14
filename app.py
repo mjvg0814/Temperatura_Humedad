@@ -171,8 +171,8 @@ st.markdown('<label class="upload-label">📂 Seleccione archivo CSV</label>', u
 uploaded_file = st.file_uploader('', type=['csv'])
 
 if uploaded_file is not None:
-try:
-df1 = pd.read_csv(uploaded_file)
+    try:
+        df1 = pd.read_csv(uploaded_file)
 
         column_mapping = {
             'temperatura {device="ESP32", name="Sensor 1"}': 'temperatura',
@@ -268,32 +268,32 @@ df1 = pd.read_csv(uploaded_file)
             st.subheader("Información del Sitio de Medición")
             col1, col2 = st.columns(2)
 
-           with col1:
-               st.markdown("""
-               <h3 style='color:#265121; font-size:1.3rem; margin-bottom:0.5rem;'>Ubicación del Sensor</h3>
-               """, unsafe_allow_html=True)
+            with col1:
+                st.markdown("""
+                <h3 style='color:#265121; font-size:1.3rem; margin-bottom:0.5rem;'>Ubicación del Sensor</h3>
+                """, unsafe_allow_html=True)
 
-               st.markdown("""
-               <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>
-               <strong>📍 Universidad EAFIT</strong></h4>
-               """, unsafe_allow_html=True)
+                st.markdown("""
+                <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>
+                <strong>📍 Universidad EAFIT</strong></h4>
+                """, unsafe_allow_html=True)
 
-               st.markdown("""
-               <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>🌎 Latitud: 6.2006</h4>
-               """, unsafe_allow_html=True)
+                st.markdown("""
+                <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>🌎 Latitud: 6.2006</h4>
+                """, unsafe_allow_html=True)
 
-               st.markdown("""
-               <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>🌍 Longitud: -75.5783</h4>
-               """, unsafe_allow_html=True)
+                st.markdown("""
+                <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>🌍 Longitud: -75.5783</h4>
+                """, unsafe_allow_html=True)
 
-               st.markdown("""
-               <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>⛰️ Altitud: ~1,495 metros sobre el nivel del mar</h4>
-               """, unsafe_allow_html=True)
+                st.markdown("""
+                <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>⛰️ Altitud: ~1,495 metros sobre el nivel del mar</h4>
+                """, unsafe_allow_html=True)
 
             with col2:
                 st.markdown("<h3>Detalles del Sensor</h3>", unsafe_allow_html=True)
                 st.markdown("<h4>- Tipo: ESP32</h4>", unsafe_allow_html=True)
-                st.markdown("<h4>- Variables medidas:Temperatura (°C) y Humedad (%)</h4>", unsafe_allow_html=True)
+                st.markdown("<h4>- Variables medidas: Temperatura (°C) y Humedad (%)</h4>", unsafe_allow_html=True)
                 st.markdown("<h4>- Frecuencia de medición: Según configuración</h4>", unsafe_allow_html=True)
                 st.markdown("<h4>- Ubicación: Campus universitario</h4>", unsafe_allow_html=True)
 
@@ -301,7 +301,8 @@ df1 = pd.read_csv(uploaded_file)
         st.error(f'Error al procesar el archivo: {str(e)}')
 
 else:
-st.markdown('<div class="warning-message">⚠️ Por favor, cargue un archivo CSV para comenzar el análisis.</div>', unsafe_allow_html=True)
+    st.markdown('<div class="warning-message">⚠️ Por favor, cargue un archivo CSV para comenzar el análisis.</div>', unsafe_allow_html=True)
+
 
 # Footer
 
