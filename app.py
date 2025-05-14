@@ -102,6 +102,36 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+#Pestañas
+st.markdown("""
+<style>
+/* Cambia el estilo de las pestañas */
+div[data-baseweb="tab"] {
+    background-color: #D9F7D9;
+    color: #4E5B4E;
+    border-radius: 8px 8px 0 0;
+    padding: 10px 20px;
+    margin-right: 4px;
+    font-weight: 600;
+    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+div[data-baseweb="tab"]:hover {
+    background-color: #bdebbd;
+    color: #265121;
+}
+
+/* Tab activa */
+div[data-baseweb="tab"][aria-selected="true"] {
+    background-color: #4E5B4E !important;
+    color: white !important;
+    font-weight: 700;
+}
+</style>
+""", unsafe_allow_html=True)
+
+
 # Datos de ubicación EAFIT
 eafit_location = pd.DataFrame({
     'lat': [6.2006],
