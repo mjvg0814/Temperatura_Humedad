@@ -11,7 +11,6 @@ st.set_page_config(
 )
 
 # Custom CSS
-# Custom CSS con estilo naturaleza
 st.markdown("""
     <style>
     .stApp {
