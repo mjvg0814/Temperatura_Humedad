@@ -172,7 +172,7 @@ if uploaded_file is not None:
 
         with tab1:
             st.subheader('Visualización de Datos')
-            variable = st.selectbox("Seleccione variable a visualizar", ["temperatura", "humedad", "Ambas variables"])
+            variable = st.selectbox("Seleccione variable a visualizar", ["Temperatura", "Humedad", "Ambas variables"])
             chart_type = st.selectbox("Seleccione tipo de gráfico", ["Línea", "Área", "Barra"])
 
             if variable == "Ambas variables":
