@@ -216,7 +216,7 @@ if uploaded_file is not None:
             with col1:
                 st.dataframe(stats_df)
             with col2:
-                if stat_variable == "temperatura":
+                if stat_variable == "Temperatura":
                     st.metric("Temperatura Promedio", f"{stats_df['mean']:.2f}°C")
                     st.metric("Temperatura Máxima", f"{stats_df['max']:.2f}°C")
                     st.metric("Temperatura Mínima", f"{stats_df['min']:.2f}°C")
