@@ -11,6 +11,48 @@ page_title="Análisis de Sensores - Mi Ciudad",
 layout="wide"
 )
 
+st.markdown("""
+    <style>
+    /* Estilo para los tabs */
+    .css-1r1m4t0 {
+        background-color: #4E5B4E; /* Color de fondo de los tabs */
+        border-radius: 10px;
+    }
+    .css-1r1m4t0 > div {
+        padding: 10px;
+        font-size: 1.1rem;
+        color: white;
+        font-weight: bold;
+    }
+
+    .css-1r1m4t0 > div:hover {
+        background-color: #76C76D; /* Color al pasar el ratón */
+    }
+
+    /* Estilo para el tab activo */
+    .css-1r1m4t0 .st-a {
+        background-color: #76C76D;
+        border-radius: 10px;
+        color: white;
+    }
+
+    /* Estilo para el contenido de los tabs */
+    .stTab {
+        background-color: #F4F8F4;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 1rem;
+        color: #4E5B4E;
+    }
+
+    /* Estilo para el texto del tab */
+    .css-1v0mbdj {
+        font-size: 1rem;
+        color: #4E5B4E;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # Estilos de fondo y elementos
 
 st.markdown("""
