@@ -102,34 +102,44 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-#Pestañas
+#Menú desplegable
 st.markdown("""
-<style>
-/* Cambia el estilo de las pestañas */
-div[data-baseweb="tab"] {
-    background-color: #D9F7D9;
-    color: #4E5B4E;
-    border-radius: 8px 8px 0 0;
-    padding: 10px 20px;
-    margin-right: 4px;
-    font-weight: 600;
-    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
-    transition: background-color 0.3s ease;
-}
+    <style>
+        /* Estilo de selectbox */
+        .stSelectbox select {
+            background-color: #D9F7D9;
+            color: #4E5B4E;
+            border: 2px solid #4E5B4E;
+            border-radius: 6px;
+            padding: 8px 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
 
-div[data-baseweb="tab"]:hover {
-    background-color: #bdebbd;
-    color: #265121;
-}
+        /* Hover (cuando el mouse está sobre el selectbox) */
+        .stSelectbox select:hover {
+            background-color: #bdebbd;
+            color: #265121;
+        }
 
-/* Tab activa */
-div[data-baseweb="tab"][aria-selected="true"] {
-    background-color: #4E5B4E !important;
-    color: white !important;
-    font-weight: 700;
-}
-</style>
+        /* Selectbox seleccionado */
+        .stSelectbox select:focus {
+            background-color: #4E5B4E;
+            color: white;
+            border-color: #265121;
+        }
+
+        /* Estilo cuando el selectbox es deshabilitado */
+        .stSelectbox select:disabled {
+            background-color: #f0f0f0;
+            color: #c0c0c0;
+            border-color: #c0c0c0;
+        }
+    </style>
 """, unsafe_allow_html=True)
+
 
 
 # Datos de ubicación EAFIT
@@ -167,7 +177,7 @@ if uploaded_file is not None:
 
         with tab1:
             st.subheader('Visualización de Datos')
-            variable = st.selectbox("Seleccione variable a visualizar", ["temperatura", "humedad", "Ambas variables"])
+            variable = st.selectbox("Seleccione variable a visualizar", ["Temperatura", "Humedad", "Ambas variables"])
             chart_type = st.selectbox("Seleccione tipo de gráfico", ["Línea", "Área", "Barra"])
 
             if variable == "Ambas variables":
@@ -199,7 +209,7 @@ if uploaded_file is not None:
 
         with tab2:
             st.subheader('Análisis Estadístico')
-            stat_variable = st.radio("Seleccione variable para estadísticas", ["temperatura", "humedad"])
+            stat_variable = st.radio("Seleccione variable para estadísticas", ["Temperatura", "Humedad"])
             stats_df = df1[stat_variable].describe()
 
             col1, col2 = st.columns(2)
@@ -217,7 +227,7 @@ if uploaded_file is not None:
 
         with tab3:
             st.subheader('Filtros de Datos')
-            filter_variable = st.selectbox("Seleccione variable para filtrar", ["temperatura", "humedad"])
+            filter_variable = st.selectbox("Seleccione variable para filtrar", ["Temperatura", "Humedad"])
             col1, col2 = st.columns(2)
 
             with col1:
