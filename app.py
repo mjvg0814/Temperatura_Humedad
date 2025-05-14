@@ -24,13 +24,19 @@ st.markdown("""
 
     /* Estilo para el título principal */
     h1 {
-        color: #1b5e20;
-        font-size: 3rem;
-        text-align: center;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        margin-top: 1rem;
-    }
-
+    color: #1b5e20;
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    border: 2px solid #a5d6a7;
+}
     /* Subtítulo y texto */
     .markdown-text-container p {
         font-size: 1.1rem;
