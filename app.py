@@ -216,7 +216,7 @@ if uploaded_file is not None:
                 else:
                     st.bar_chart(df1[variable])
 
-            if st.checkbox('Mostrar datos crudos'):
+            if st.checkbox("<h4 style='color:#4E5B4E; font-size:1.1rem;'>Mostrar datos crudos</h4>", unsafe_allow_html=True):
                 st.write(df1)
 
         with tab2:
