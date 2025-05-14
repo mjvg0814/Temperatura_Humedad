@@ -10,7 +10,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# Custom CSS
+#Body
 st.markdown("""
     <style>
     .stApp {
@@ -23,7 +23,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Título personalizado
+# Título
 st.markdown("""
     <h1 style='
         font-family: "Segoe UI", "Trebuchet MS", sans-serif;
@@ -41,7 +41,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# Title and description
+#Descripción
 st.markdown("""
     <h3 style='
         font-family: "Segoe UI", "Trebuchet MS", sans-serif;
@@ -54,6 +54,38 @@ st.markdown("""
         Esta aplicación permite analizar datos de temperatura y humedad
         recolectados por sensores ESP32 en diferentes puntos de la ciudad.
     </h3>
+""", unsafe_allow_html=True)
+
+#Upload
+st.markdown("""
+    <style>
+        .upload-file {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #4E5B4E;  /* Gris verdoso oscuro */
+            text-align: center;
+            margin-top: 20px;
+        }
+        .warning-message {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #D9534F;  /* Rojo para advertencias */
+            text-align: center;
+            margin-top: 20px;
+        }
+        .stFileUploader > label {
+            background-color: #D9F7D9;
+            border: 2px solid #4E5B4E;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 1.1rem;
+            color: #4E5B4E;
+            cursor: pointer;
+        }
+        .stFileUploader > label:hover {
+            background-color: #B9E2B9;
+        }
+    </style>
 """, unsafe_allow_html=True)
 
 
