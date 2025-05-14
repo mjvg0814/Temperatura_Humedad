@@ -266,20 +266,20 @@ if uploaded_file is not None:
             col1, col2 = st.columns(2)
 
            with col1:
-    st.markdown("<h3>Ubicación del Sensor</h3>", unsafe_allow_html=True)
-    st.write("**Universidad EAFIT**", unsafe_allow_html=True)
-    st.write("- Latitud: 6.2006", unsafe_allow_html=True)
-    st.write("- Longitud: -75.5783", unsafe_allow_html=True)
-    st.write("- Altitud: ~1,495 metros sobre el nivel del mar", unsafe_allow_html=True)
+               st.markdown("<h3>Ubicación del Sensor</h3>", unsafe_allow_html=True)
+               st.write("**Universidad EAFIT**", unsafe_allow_html=True)
+               st.write("- Latitud: 6.2006", unsafe_allow_html=True)
+               st.write("- Longitud: -75.5783", unsafe_allow_html=True)
+               st.write("- Altitud: ~1,495 metros sobre el nivel del mar", unsafe_allow_html=True)
 
-with col2:
-    st.markdown("<h3>Detalles del Sensor</h3>", unsafe_allow_html=True)
-    st.write("<h4>- Tipo: ESP32</h4>", unsafe_allow_html=True)
-    st.write("<h4>- Variables medidas:</h4>", unsafe_allow_html=True)
-    st.write("<h4>  * Temperatura (°C)</h4>", unsafe_allow_html=True)
-    st.write("<h4>  * Humedad (%)</h4>", unsafe_allow_html=True)
-    st.write("<h4>- Frecuencia de medición: Según configuración</h4>", unsafe_allow_html=True)
-    st.write("<h4>- Ubicación: Campus universitario</h4>", unsafe_allow_html=True)
+           with col2:
+               st.markdown("<h3>Detalles del Sensor</h3>", unsafe_allow_html=True)
+               st.write("<h4>- Tipo: ESP32</h4>", unsafe_allow_html=True)
+               st.write("<h4>- Variables medidas:</h4>", unsafe_allow_html=True)
+               st.write("<h4>  * Temperatura (°C)</h4>", unsafe_allow_html=True)
+               st.write("<h4>  * Humedad (%)</h4>", unsafe_allow_html=True)
+               st.write("<h4>- Frecuencia de medición: Según configuración</h4>", unsafe_allow_html=True)
+               st.write("<h4>- Ubicación: Campus universitario</h4>", unsafe_allow_html=True)
 
 
     except Exception as e:
