@@ -69,7 +69,7 @@ st.markdown("""
 
     h4 {
         font-family: "Segoe UI", "Trebuchet MS", sans-serif;
-        font-size: 1.2rem;
+        font-size: 0.7rem;
         font-weight: normal;
         color: #4E5B4E;
         text-align: left;
