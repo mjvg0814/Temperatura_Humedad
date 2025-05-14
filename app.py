@@ -109,7 +109,7 @@ st.markdown("""
     /* Estilo para los selectbox */
     .stSelectbox {
         background-color: #FFFFFF;
-        border: 2px solid #265121; 
+        border: 2px solid #4c8146; 
         border-radius: 10px; 
         padding: 12px 18px; 
         font-size: 1rem;
