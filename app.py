@@ -223,7 +223,11 @@ if uploaded_file is not None:
             st.markdown("""
                <h2 style='font-family: "Segoe UI", "Trebuchet MS", sans-serif; font-size: 2rem; font-weight: 700;color: #265121; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);'>Análisis Estadístico</h2>
                """, unsafe_allow_html=True)
-            stat_variable = st.radio("Seleccione variable para estadísticas", ["temperatura", "humedad"])
+            st.markdown("""
+               <h4 style='color:#3b463b; font-size:1.1rem; margin:0.2rem 0;'>Seleccione variable para estadísticas</h4>
+               """, unsafe_allow_html=True)
+               stat_variable = st.radio("", ["temperatura", "humedad"])
+
             stats_df = df1[stat_variable].describe()
 
             col1, col2 = st.columns(2)
