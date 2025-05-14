@@ -12,16 +12,34 @@ st.set_page_config(
 )
 
 # Custom CSS
+# Custom CSS con estilo naturaleza
 st.markdown("""
     <style>
-    .main {
-        padding: 2rem;
+    /* Fondo con gradiente natural */
+    .stApp {
+        background: linear-gradient(120deg, #e0f7fa, #c8e6c9);
+        background-attachment: fixed;
+        color: #2e4d25;
+        font-family: 'Segoe UI', sans-serif;
     }
-    .stAlert {
+
+    /* Estilo para el título principal */
+    h1 {
+        color: #1b5e20;
+        font-size: 3rem;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         margin-top: 1rem;
+    }
+
+    /* Subtítulo y texto */
+    .markdown-text-container p {
+        font-size: 1.1rem;
+        color: #2e4d25;
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 # Title and description
 st.title('📊 Análisis de datos de Sensores en Mi Ciudad')
