@@ -116,8 +116,7 @@ st.markdown("""
 
 """, unsafe_allow_html=True)
 
-# Estilo para los selectbox
-
+#Selectbox
 st.markdown("""
 
 <style>
@@ -147,6 +146,30 @@ transition: border-color 0.3s ease, background-color 0.3s ease;
 
     </style>
 
+""", unsafe_allow_html=True)
+
+#checkbox
+st.markdown("""
+    <style>
+    .stCheckbox > label {
+        font-size: 1rem;
+        color: #4E5B4E;
+        font-weight: bold;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+    .stCheckbox input {
+        border-radius: 4px;
+        border: 2px solid #4E5B4E;
+        transition: background-color 0.3s ease;
+    }
+    .stCheckbox input:checked {
+        background-color: #76C76D;
+    }
+    .stCheckbox input:hover {
+        border-color: #76C76D;
+    }
+    </style>
 """, unsafe_allow_html=True)
 
 # Datos de ubicación EAFIT
@@ -216,7 +239,7 @@ if uploaded_file is not None:
                 else:
                     st.bar_chart(df1[variable])
 
-            if st.checkbox("<h4 style='color:#4E5B4E; font-size:1.1rem;'>Mostrar datos crudos</h4>", unsafe_allow_html=True):
+            if st.checkbox("Mostrar datos crudos"):
                 st.write(df1)
 
         with tab2:
