@@ -19,7 +19,6 @@ st.markdown("""
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
-        opacity: 0.7;
     }
     </style>
 """, unsafe_allow_html=True)
