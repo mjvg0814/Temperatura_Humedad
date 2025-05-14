@@ -56,7 +56,7 @@ st.markdown("""
         font-size: 1.5rem;
         font-weight: bold;
         color: #265121;
-        text-align: right;
+        text-align: left;
         margin-top: 1.5rem;
         margin-bottom: 1rem;
         letter-spacing: 1px;
