@@ -45,8 +45,8 @@ st.markdown("""
 st.markdown("""
     <h3 style='
         font-family: "Segoe UI", "Trebuchet MS", sans-serif;
-        font-size: 1.5rem;
-        color: #265121;
+        font-size: 1rem;
+        color: #4E5B4E;
         text-align: center;
         margin-top: 0;
         margin-bottom: 1rem;
