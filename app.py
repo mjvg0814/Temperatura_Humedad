@@ -172,25 +172,25 @@ if uploaded_file is not None:
 
         with tab1:
             st.subheader('Visualización de Datos')
-            variable = st.selectbox("Seleccione variable a visualizar", ["Temperatura", "Humedad", "Ambas variables"])
+            variable = st.selectbox("Seleccione variable a visualizar", ["temperatura", "humedad", "Ambas variables"])
             chart_type = st.selectbox("Seleccione tipo de gráfico", ["Línea", "Área", "Barra"])
 
             if variable == "Ambas variables":
                 st.write("### Temperatura")
                 if chart_type == "Línea":
-                    st.line_chart(df1["Temperatura"])
+                    st.line_chart(df1["temperatura"])
                 elif chart_type == "Área":
-                    st.area_chart(df1["Temperatura"])
+                    st.area_chart(df1["temperatura"])
                 else:
-                    st.bar_chart(df1["Temperatura"])
+                    st.bar_chart(df1["temperatura"])
 
                 st.write("### Humedad")
                 if chart_type == "Línea":
-                    st.line_chart(df1["Humedad"])
+                    st.line_chart(df1["humedad"])
                 elif chart_type == "Área":
-                    st.area_chart(df1["Humedad"])
+                    st.area_chart(df1["humedad"])
                 else:
-                    st.bar_chart(df1["Humedad"])
+                    st.bar_chart(df1["humedad"])
             else:
                 if chart_type == "Línea":
                     st.line_chart(df1[variable])
