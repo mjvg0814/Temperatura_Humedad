@@ -55,6 +55,17 @@ st.markdown("""
 
 # Descripción
 st.markdown("""
+    <style>
+        h4 {
+            font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #4E5B4E;
+            margin: 0.5rem 0;
+            letter-spacing: 0.3px;
+        }
+    </style>
+
     <h3 style='
         font-family: "Segoe UI", "Trebuchet MS", sans-serif;
         font-size: 1rem;
@@ -66,16 +77,8 @@ st.markdown("""
         Esta aplicación permite analizar datos de temperatura y humedad
         recolectados por sensores ESP32 en diferentes puntos de la ciudad.
     </h3>
-
-    h4 {
-    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #4E5B4E;
-    margin: 0.5rem 0;
-    letter-spacing: 0.3px;
-   }
 """, unsafe_allow_html=True)
+
 
 # Mensaje CSV
 st.markdown("""
