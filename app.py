@@ -14,7 +14,6 @@ st.set_page_config(
 # Custom CSS con estilo naturaleza
 st.markdown("""
     <style>
-    /* Fondo*/
     .stApp {
         background-image: url('https://raw.githubusercontent.com/mjvg0814/Temperatura_Humedad/main/Fondo_naturaleza.png');
         background-size: cover;
@@ -22,20 +21,24 @@ st.markdown("""
         background-attachment: fixed;
         background-position: center;
     }
-
-    /* Estilo para el título principal */
-    h1 {
-    font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
-    font-size: 4rem;
-    font-weight: 900;
-    color: #2e7d32; /* Verde intenso */
-    text-align: center;
-    letter-spacing: 1.5px;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-}
     </style>
+""", unsafe_allow_html=True)
+
+# Título personalizado
+st.markdown("""
+    <h1 style='
+        font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+        font-size: 4rem;
+        font-weight: 900;
+        color: #2e7d32;
+        text-align: center;
+        letter-spacing: 1.5px;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    '>
+        Análisis de datos de Sensores en Mi Ciudad
+    </h1>
 """, unsafe_allow_html=True)
 
 
