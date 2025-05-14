@@ -260,12 +260,27 @@ if uploaded_file is not None:
             st.subheader("Información del Sitio de Medición")
             col1, col2 = st.columns(2)
 
-            with col1:
-                st.markdown("<h3>Ubicación del Sensor</h3>", unsafe_allow_html=True)
-                st.markdown("<h4><strong>Universidad EAFIT</strong></h4>", unsafe_allow_html=True)
-                st.markdown("<h4>- Latitud: 6.2006</h4>", unsafe_allow_html=True)
-                st.markdown("<h4>- Longitud: -75.5783</h4>", unsafe_allow_html=True)
-                st.markdown("<h4>- Altitud: ~1,495 metros sobre el nivel del mar</h4>", unsafe_allow_html=True)
+           with col1:
+               st.markdown("""
+               <h3 style='color:#265121; font-size:1.3rem; margin-bottom:0.5rem;'>Ubicación del Sensor</h3>
+               """, unsafe_allow_html=True)
+    
+               st.markdown("""
+               <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>
+               <strong>📍 Universidad EAFIT</strong></h4>
+               """, unsafe_allow_html=True)
+    
+               st.markdown("""
+               <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>🌎 Latitud: 6.2006</h4>
+               """, unsafe_allow_html=True)
+    
+               st.markdown("""
+               <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>🌍 Longitud: -75.5783</h4>
+               """, unsafe_allow_html=True)
+    
+               st.markdown("""
+               <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>⛰️ Altitud: ~1,495 metros sobre el nivel del mar</h4>
+               """, unsafe_allow_html=True)
 
             with col2:
                 st.markdown("<h3>Detalles del Sensor</h3>", unsafe_allow_html=True)
