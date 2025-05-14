@@ -276,6 +276,6 @@ st.markdown("""
     <div style="font-family: 'Segoe UI', 'Trebuchet MS', sans-serif; font-size: 1rem; color: #4E5B4E; text-align: center; margin-top: 0px; margin-bottom: -150px;">
         <p><strong>Desarrollado para el análisis de datos de sensores urbanos</strong></p>
         <strong>Universidad EAFIT</strong>, Medellín, Colombia</p>
-        <p>Tomas Arcila, Joel Diaz y Maria Jose Vallejo</p>
+        <p><strong>Tomas Arcila, Joel Diaz y Maria Jose Vallejo</strong></p>
     </div>
 """, unsafe_allow_html=True)
