@@ -16,7 +16,7 @@ st.markdown("""
     <style>
     /* Fondo*/
     body {
-        background-image: url('https://raw.githubusercontent.com/tu_usuario/tu_repo/main/fondo-naturaleza.jpg');
+        background-image: url('https://github.com/mjvg0814/Temperatura_Humedad/blob/main/Fondo_naturaleza.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
