@@ -13,31 +13,36 @@ layout="wide"
 
 st.markdown("""
     <style>
-    /* Estilo general para los tabs */
-    .css-1d391kg {
-        background-color: #4E5B4E; /* Color de fondo de los tabs */
+    /* Estilo para el contenedor de los tabs */
+    div.stTabs {
+        background-color: #4E5B4E;
         border-radius: 10px;
-    }
-    .css-1d391kg > div {
-        padding: 12px;
         font-size: 1.1rem;
-        color: white;
         font-weight: bold;
     }
+    
+    /* Estilo para cada tab individual */
+    div.stTabs div[role="tab"] {
+        padding: 12px;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
 
-    .css-1d391kg > div:hover {
-        background-color: #76C76D; /* Color al pasar el ratón */
+    /* Cambio de color cuando se pasa el ratón por encima del tab */
+    div.stTabs div[role="tab"]:hover {
+        background-color: #76C76D;
     }
 
     /* Estilo para el tab activo */
-    .css-1d391kg .st-bb {
+    div.stTabs div[aria-selected="true"] {
         background-color: #76C76D;
-        border-radius: 10px;
         color: white;
+        border-radius: 10px;
     }
 
-    /* Estilo para el contenido de los tabs */
-    .stTab {
+    /* Estilo para el contenido dentro de los tabs */
+    div.stTab {
         background-color: #F4F8F4;
         padding: 20px;
         border-radius: 10px;
