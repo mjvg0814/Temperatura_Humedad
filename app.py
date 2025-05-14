@@ -28,7 +28,7 @@ st.markdown("""
 st.markdown("""
     <h1 style='
         font-family: "Segoe UI", "Trebuchet MS", sans-serif;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 900;
         color: #2e7d32;
         text-align: center;
