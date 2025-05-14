@@ -21,42 +21,6 @@ st.markdown("""
         background-position: center;
     }
 
-    .upload-file {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #4E5B4E;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.warning-message {
-    font-size: 1rem;
-    color: #D9534F;
-    background-color: #FDECEA;
-    border-left: 4px solid #D9534F;
-    padding: 8px 12px;
-    margin: 15px auto;
-    width: fit-content;
-    border-radius: 4px;
-    text-align: left;
-}
-
-.stFileUploader > label {
-    background-color: #D9F7D9;
-    border: 2px solid #4E5B4E;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 1.05rem;
-    color: #4E5B4E;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.stFileUploader > label:hover {
-    background-color: #B9E2B9;
-}
-
-
     .location-title {
         font-family: "Segoe UI", "Trebuchet MS", sans-serif;
         font-size: 5rem;
