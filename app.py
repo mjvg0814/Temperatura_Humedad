@@ -84,6 +84,32 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+#Cargar CSV
+st.markdown("""
+<style>
+.upload-label {
+    display: inline-block;
+    background-color: #D9F7D9;
+    border: 2px solid #4E5B4E;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1.05rem;
+    color: #4E5B4E;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+    background-color: #B9E2B9;
+}
+
+.stFileUploader label {
+    display: none; /* Oculta el label original de Streamlit */
+}
+</style>
+""", unsafe_allow_html=True)
+
 # Datos de ubicación EAFIT
 eafit_location = pd.DataFrame({
     'lat': [6.2006],
@@ -98,6 +124,9 @@ st.markdown('<p class="location-title">📍 Ubicación de los Sensores - Univers
 st.map(eafit_location, zoom=15)
 
 # File uploader
+st.markdown('<label class="upload-label">📂 Seleccione archivo CSV</label>', unsafe_allow_html=True)
+uploaded_file = st.file_uploader('', type=['csv'])
+
 uploaded_file = st.file_uploader('Seleccione archivo CSV', type=['csv'])
 
 if uploaded_file is not None:
