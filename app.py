@@ -106,8 +106,8 @@ st.markdown("""
 # Estilo para los selectbox
 st.markdown("""
     <style>
-    /* Estilo para el selectbox */
-    .stSelectbox {
+    /* Estilo global para todos los selectbox */
+    .streamlit-expanderHeader, .stSelectbox {
         background-color: #D9F7D9;
         border: 2px solid #4E5B4E;
         border-radius: 6px;
@@ -131,6 +131,7 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 
 # Datos de ubicación EAFIT
