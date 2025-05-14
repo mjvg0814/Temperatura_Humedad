@@ -62,13 +62,7 @@ st.markdown("""
         letter-spacing: 1px;
         text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
     }
-
-    .stMap {
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
+    
     </style>
 """, unsafe_allow_html=True)
 
