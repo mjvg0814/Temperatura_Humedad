@@ -186,7 +186,9 @@ if uploaded_file is not None:
         tab1, tab2, tab3, tab4 = st.tabs(["📈 Visualización", "📊 Estadísticas", "🔍 Filtros", "🗺️ Información del Sitio"])
 
         with tab1:
-            st.subheader('Visualización de Datos')
+            st.markdown("""
+               <h2 style='font-family: "Segoe UI", "Trebuchet MS", sans-serif; font-size: 2rem; font-weight: 700;color: #265121; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);'>Visualización de datos</h2>
+               """, unsafe_allow_html=True)
             variable = st.selectbox("Seleccione variable a visualizar", ["temperatura", "humedad", "Ambas variables"])
             chart_type = st.selectbox("Seleccione tipo de gráfico", ["Línea", "Área", "Barra"])
 
@@ -218,7 +220,9 @@ if uploaded_file is not None:
                 st.write(df1)
 
         with tab2:
-            st.subheader('Análisis Estadístico')
+            st.markdown("""
+               <h2 style='font-family: "Segoe UI", "Trebuchet MS", sans-serif; font-size: 2rem; font-weight: 700;color: #265121; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);'>Análisis Estadístico</h2>
+               """, unsafe_allow_html=True)
             stat_variable = st.radio("Seleccione variable para estadísticas", ["temperatura", "humedad"])
             stats_df = df1[stat_variable].describe()
 
