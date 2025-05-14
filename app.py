@@ -14,12 +14,13 @@ st.set_page_config(
 # Custom CSS con estilo naturaleza
 st.markdown("""
     <style>
-    /* Fondo con gradiente natural */
-    .stApp {
-        background: linear-gradient(120deg, #e0f7fa, #c8e6c9);
+    /* Fondo*/
+    body {
+        background-image: url('https://raw.githubusercontent.com/tu_usuario/tu_repo/main/fondo-naturaleza.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
         background-attachment: fixed;
-        color: #2e4d25;
-        font-family: 'Segoe UI', sans-serif;
+        background-position: center;
     }
 
     /* Estilo para el título principal */
@@ -33,13 +34,7 @@ st.markdown("""
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
     margin-top: 1.5rem;
     margin-bottom: 1rem;
-    animation: pop 1s ease-out;
 }
-    /* Subtítulo y texto */
-    .markdown-text-container p {
-        font-size: 1.1rem;
-        color: #2e4d25;
-    }
     </style>
 """, unsafe_allow_html=True)
 
