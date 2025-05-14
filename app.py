@@ -43,9 +43,19 @@ st.markdown("""
 
 # Title and description
 st.markdown("""
-    Esta aplicación permite analizar datos de temperatura y humedad
-    recolectados por sensores ESP32 en diferentes puntos de la ciudad.
-""")
+    <h3 style='
+        font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+        font-size: 1.5rem;
+        color: #265121;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    '>
+        Esta aplicación permite analizar datos de temperatura y humedad
+        recolectados por sensores ESP32 en diferentes puntos de la ciudad.
+    </h3>
+""", unsafe_allow_html=True)
+
 
 # Create map data for EAFIT
 eafit_location = pd.DataFrame({
