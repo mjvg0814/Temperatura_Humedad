@@ -206,6 +206,7 @@ if uploaded_file is not None:
         df1 = df1.set_index('Time')
 
         tab1, tab2, tab3, tab4 = st.tabs(["📈 Visualización", "📊 Estadísticas", "🔍 Filtros", "🗺️ Información del Sitio"])
+        
 
         with tab1:
             st.markdown("""
