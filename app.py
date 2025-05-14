@@ -178,19 +178,19 @@ if uploaded_file is not None:
             if variable == "Ambas variables":
                 st.write("### Temperatura")
                 if chart_type == "Línea":
-                    st.line_chart(df1["temperatura"])
+                    st.line_chart(df1["Temperatura"])
                 elif chart_type == "Área":
-                    st.area_chart(df1["temperatura"])
+                    st.area_chart(df1["Temperatura"])
                 else:
-                    st.bar_chart(df1["temperatura"])
+                    st.bar_chart(df1["Temperatura"])
 
                 st.write("### Humedad")
                 if chart_type == "Línea":
-                    st.line_chart(df1["humedad"])
+                    st.line_chart(df1["Humedad"])
                 elif chart_type == "Área":
-                    st.area_chart(df1["humedad"])
+                    st.area_chart(df1["Humedad"])
                 else:
-                    st.bar_chart(df1["humedad"])
+                    st.bar_chart(df1["Humedad"])
             else:
                 if chart_type == "Línea":
                     st.line_chart(df1[variable])
