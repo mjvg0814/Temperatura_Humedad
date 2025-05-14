@@ -291,11 +291,29 @@ if uploaded_file is not None:
                 """, unsafe_allow_html=True)
 
             with col2:
-                st.markdown("<h3>Detalles del Sensor</h3>", unsafe_allow_html=True)
-                st.markdown("<h4>- Tipo: ESP32</h4>", unsafe_allow_html=True)
-                st.markdown("<h4>- Variables medidas: Temperatura (°C) y Humedad (%)</h4>", unsafe_allow_html=True)
-                st.markdown("<h4>- Frecuencia de medición: Según configuración</h4>", unsafe_allow_html=True)
-                st.markdown("<h4>- Ubicación: Campus universitario</h4>", unsafe_allow_html=True)
+               st.markdown("""
+               <h3 style='color:#265121; font-size:1.3rem; margin-bottom:0.5rem;'>Detalles del Sensor</h3>
+               """, unsafe_allow_html=True)
+    
+               st.markdown("""
+               <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>🔧 Tipo: ESP32</h4>
+               """, unsafe_allow_html=True)
+    
+               st.markdown("""
+               <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>📏 Variables medidas:</h4>
+               <ul style='color:#4E5B4E; font-size:1.05rem; margin:0 0 0.5rem 1.2rem;'>
+                   <li>🌡️ Temperatura (°C)</li>
+                   <li>💧 Humedad (%)</li>
+               </ul>
+               """, unsafe_allow_html=True)
+    
+               st.markdown("""
+               <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>⏱️ Frecuencia: Según configuración</h4>
+               """, unsafe_allow_html=True)
+    
+               st.markdown("""
+               <h4 style='color:#4E5B4E; font-size:1.1rem; margin:0.2rem 0;'>🏫 Ubicación: Campus universitario</h4>
+               """, unsafe_allow_html=True)
 
     except Exception as e:
         st.error(f'Error al procesar el archivo: {str(e)}')
