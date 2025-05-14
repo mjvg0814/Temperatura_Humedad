@@ -106,31 +106,32 @@ st.markdown("""
 # Estilo para los selectbox
 st.markdown("""
     <style>
-    /* Estilo global para todos los selectbox */
-    .streamlit-expanderHeader, .stSelectbox {
-        background-color: #D9F7D9;
-        border: 2px solid #4E5B4E;
-        border-radius: 6px;
-        padding: 10px 15px;
+    /* Estilo para los selectbox */
+    .stSelectbox {
+        background-color: #FFFFFF;  /* Fondo blanco */
+        border: 2px solid #A3D9A5;  /* Borde verde claro */
+        border-radius: 10px;  /* Bordes más redondeados */
+        padding: 12px 18px;  /* Espacio interno para más comodidad */
         font-size: 1rem;
-        color: #4E5B4E;
-        font-weight: bold;
+        color: #4E5B4E;  /* Color del texto */
+        font-weight: 600;  /* Texto un poco más grueso */
         cursor: pointer;
-        transition: background-color 0.3s ease;
+        transition: border-color 0.3s ease, background-color 0.3s ease;  /* Transiciones suaves */
     }
 
     /* Estilo cuando el selectbox está enfocado */
     .stSelectbox:focus {
-        outline: none;
-        box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+        outline: none;  /* Quitar outline por defecto */
+        box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);  /* Sombra verde al enfocar */
+        border-color: #76C76D;  /* Borde verde más oscuro */
+        background-color: #F0F8F0;  /* Fondo ligeramente más claro */
     }
 
     /* Estilo para el selectbox cuando se pasa el mouse por encima */
     .stSelectbox:hover {
-        background-color: #bdebbd;
-    }
-    </style>
-""", unsafe_allow_html=True)
+        background-color: #e8f4e8;  /* Fondo suave al pasar el mouse */
+        border-color: #76C76D;  /* Bo*
+
 
 
 
