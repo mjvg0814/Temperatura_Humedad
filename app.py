@@ -48,7 +48,7 @@ st.markdown("""
         font-size: 1rem;
         color: #4E5B4E;
         text-align: center;
-        margin-top: 0;
+        margin-top: -1rem;
         margin-bottom: 1rem;
     '>
         Esta aplicación permite analizar datos de temperatura y humedad
