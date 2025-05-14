@@ -1,7 +1,6 @@
 st.subheader("📍 Ubicación de los Sensores - Universidad EAFIT")
 st.map(eafit_location, zoom=15)
 
-ponerle css a este apartado para una interfaz en streamlit, te mandaré el codigo completo para que veas como es la estetica
 
 import pandas as pd
 import streamlit as st
