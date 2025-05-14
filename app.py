@@ -53,7 +53,7 @@ st.markdown("""
 
     .location-title {
         font-family: "Segoe UI", "Trebuchet MS", sans-serif;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: bold;
         color: #265121;
         text-align: left;
