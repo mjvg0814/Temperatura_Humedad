@@ -204,6 +204,25 @@ if uploaded_file is not None:
 
         df1['Time'] = pd.to_datetime(df1['Time'])
         df1 = df1.set_index('Time')
+        tabs = st.tabs([
+            '<div style="padding: 12px; color: white; background-color: #4E5B4E; font-weight: bold; border-radius: 10px; cursor: pointer;">📈 Visualización</div>',
+            '<div style="padding: 12px; color: white; background-color: #4E5B4E; font-weight: bold; border-radius: 10px; cursor: pointer;">📊 Estadísticas</div>',
+            '<div style="padding: 12px; color: white; background-color: #4E5B4E; font-weight: bold; border-radius: 10px; cursor: pointer;">🔍 Filtros</div>',
+            '<div style="padding: 12px; color: white; background-color: #4E5B4E; font-weight: bold; border-radius: 10px; cursor: pointer;">🗺️ Información del Sitio</div>',
+        ])
+
+# Mostrar el contenido de las pestañas
+        with tabs[0]:
+            st.write("Contenido para la pestaña 1: Visualización")
+
+        with tabs[1]:
+            st.write("Contenido para la pestaña 2: Estadísticas")
+
+        with tabs[2]:
+            st.write("Contenido para la pestaña 3: Filtros")
+
+        with tabs[3]:
+            st.write("Contenido para la pestaña 4: Información del Sitio")
 
         tab1, tab2, tab3, tab4 = st.tabs(["📈 Visualización", "📊 Estadísticas", "🔍 Filtros", "🗺️ Información del Sitio"])
 
