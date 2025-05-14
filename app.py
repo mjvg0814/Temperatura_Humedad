@@ -15,7 +15,7 @@ st.set_page_config(
 st.markdown("""
     <style>
     .stApp {
-        background-image: url('https://raw.githubusercontent.com/mjvg0814/Temperatura_Humedad/main/Fondo_plantas.png');
+        background-image: url('https://raw.githubusercontent.com/mjvg0814/Temperatura_Humedad/main/Fondo_plantas2.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -30,7 +30,7 @@ st.markdown("""
         font-family: "Segoe UI", "Trebuchet MS", sans-serif;
         font-size: 3rem;
         font-weight: 900;
-        color: #2e7d32;
+        color: #265121;
         text-align: center;
         letter-spacing: 1.5px;
         text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
