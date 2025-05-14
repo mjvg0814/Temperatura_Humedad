@@ -10,7 +10,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# Body
+#Body
 st.markdown("""
     <style>
     .stApp {
@@ -40,7 +40,8 @@ st.markdown("""
     </h1>
 """, unsafe_allow_html=True)
 
-# Descripción
+
+#Descripción
 st.markdown("""
     <h3 style='
         font-family: "Segoe UI", "Trebuchet MS", sans-serif;
@@ -55,7 +56,7 @@ st.markdown("""
     </h3>
 """, unsafe_allow_html=True)
 
-# Upload
+#Upload
 st.markdown("""
     <style>
         .upload-file {
@@ -86,6 +87,7 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
+
 
 # Create map data for EAFIT
 eafit_location = pd.DataFrame({
